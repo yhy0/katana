@@ -1,9 +1,10 @@
 package types
 
 import (
-	"regexp"
 	"strings"
 	"time"
+
+	regexp "github.com/wasilibs/go-re2"
 
 	"github.com/projectdiscovery/goflags"
 	"github.com/projectdiscovery/katana/pkg/output"

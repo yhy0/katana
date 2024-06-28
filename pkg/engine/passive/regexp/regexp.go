@@ -1,8 +1,9 @@
 package regexp
 
 import (
-	"regexp"
 	"strings"
+
+	regexp "github.com/wasilibs/go-re2"
 )
 
 var re, _ = regexp.Compile(`(?:http|https)?://(?:www\.)?[a-zA-Z0-9./?=_%:-]*`)

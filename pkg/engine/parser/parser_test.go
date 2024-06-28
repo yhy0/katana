@@ -2,9 +2,10 @@ package parser
 
 import (
 	"net/http"
-	"regexp"
 	"strings"
 	"testing"
+
+	regexp "github.com/wasilibs/go-re2"
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/projectdiscovery/katana/pkg/navigation"

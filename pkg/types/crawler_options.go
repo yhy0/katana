@@ -2,8 +2,9 @@ package types
 
 import (
 	"context"
-	"regexp"
 	"time"
+
+	regexp "github.com/wasilibs/go-re2"
 
 	"github.com/projectdiscovery/fastdialer/fastdialer"
 	"github.com/projectdiscovery/katana/pkg/output"

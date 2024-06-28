@@ -5,9 +5,10 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
-	"regexp"
 	"strings"
 	"sync"
+
+	regexp "github.com/wasilibs/go-re2"
 
 	jsoniter "github.com/json-iterator/go"
 	"github.com/logrusorgru/aurora"

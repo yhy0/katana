@@ -1,7 +1,7 @@
 package utils
 
 import (
-	"regexp"
+	regexp "github.com/wasilibs/go-re2"
 )
 
 var (

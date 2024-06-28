@@ -4,8 +4,9 @@ import (
 	"bufio"
 	"os"
 	"path/filepath"
-	"regexp"
 	"strings"
+
+	regexp "github.com/wasilibs/go-re2"
 
 	"github.com/projectdiscovery/gologger"
 	"github.com/projectdiscovery/gologger/formatter"

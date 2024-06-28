@@ -1,7 +1,7 @@
 package output
 
 import (
-	"regexp"
+	regexp "github.com/wasilibs/go-re2"
 
 	"github.com/projectdiscovery/katana/pkg/utils/extensions"
 )

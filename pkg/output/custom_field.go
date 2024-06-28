@@ -3,7 +3,8 @@ package output
 import (
 	"os"
 	"path/filepath"
-	"regexp"
+
+	regexp "github.com/wasilibs/go-re2"
 
 	errorutil "github.com/projectdiscovery/utils/errors"
 	fileutil "github.com/projectdiscovery/utils/file"

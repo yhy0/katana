@@ -80,6 +80,7 @@ require (
 	github.com/shoenig/go-m1cpu v0.1.6 // indirect
 	github.com/smacker/go-tree-sitter v0.0.0-20230720070738-0d0a9f78d8f8 // indirect
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
+	github.com/tetratelabs/wazero v1.7.3 // indirect
 	github.com/tidwall/btree v1.6.0 // indirect
 	github.com/tidwall/buntdb v1.3.0 // indirect
 	github.com/tidwall/gjson v1.14.4 // indirect
@@ -88,6 +89,7 @@ require (
 	github.com/tidwall/pretty v1.2.1 // indirect
 	github.com/tidwall/rtred v0.1.2 // indirect
 	github.com/tidwall/tinyqueue v0.1.1 // indirect
+	github.com/wasilibs/go-re2 v1.6.0 // indirect
 	github.com/ysmood/fetchup v0.2.3 // indirect
 	github.com/ysmood/got v0.34.1 // indirect
 	github.com/yuin/goldmark v1.5.4 // indirect
@@ -139,7 +141,7 @@ require (
 	golang.org/x/crypto v0.19.0 // indirect
 	golang.org/x/exp v0.0.0-20230905200255-921286631fa9
 	golang.org/x/mod v0.12.0 // indirect
-	golang.org/x/sys v0.17.0 // indirect
+	golang.org/x/sys v0.21.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
 	golang.org/x/tools v0.13.0 // indirect
 	gopkg.in/djherbis/times.v1 v1.3.0 // indirect

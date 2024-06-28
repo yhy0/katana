@@ -4,8 +4,9 @@ import (
 	"fmt"
 	"net"
 	"net/url"
-	"regexp"
 	"strings"
+
+	regexp "github.com/wasilibs/go-re2"
 
 	"golang.org/x/net/publicsuffix"
 )
