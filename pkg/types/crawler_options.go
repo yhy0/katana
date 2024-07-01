@@ -78,7 +78,6 @@ func NewCrawlerOptions(options *Options) (*CrawlerOptions, error) {
 		ExtensionValidator:    extensionsValidator,
 		OutputMatchCondition:  options.OutputMatchCondition,
 		OutputFilterCondition: options.OutputFilterCondition,
-		Wappalyzer:            options.Wappalyzer,
 	}
 
 	for _, mr := range options.OutputMatchRegex {
@@ -108,6 +107,7 @@ func NewCrawlerOptions(options *Options) (*CrawlerOptions, error) {
 		Options:             options,
 		Dialer:              fastdialerInstance,
 		OutputWriter:        outputWriter,
+		Wappalyzer:          options.Wappalyzer,
 	}
 
 	if options.RateLimit > 0 {
