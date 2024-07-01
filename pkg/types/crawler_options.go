@@ -78,6 +78,7 @@ func NewCrawlerOptions(options *Options) (*CrawlerOptions, error) {
 		ExtensionValidator:    extensionsValidator,
 		OutputMatchCondition:  options.OutputMatchCondition,
 		OutputFilterCondition: options.OutputFilterCondition,
+		Wappalyzer:            options.Wappalyzer,
 	}
 
 	for _, mr := range options.OutputMatchRegex {
@@ -115,11 +116,13 @@ func NewCrawlerOptions(options *Options) (*CrawlerOptions, error) {
 		crawlerOptions.RateLimit = *ratelimit.New(context.Background(), uint(options.RateLimitMinute), time.Minute)
 	}
 
-	wappalyze, err := wappalyzer.New()
-	if err != nil {
-		return nil, err
+	if crawlerOptions.Wappalyzer == nil {
+		wappalyze, err := wappalyzer.New()
+		if err != nil {
+			return nil, err
+		}
+		crawlerOptions.Wappalyzer = wappalyze
 	}
-	crawlerOptions.Wappalyzer = wappalyze
 
 	return crawlerOptions, nil
 }

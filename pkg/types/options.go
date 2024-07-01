@@ -1,6 +1,7 @@
 package types
 
 import (
+	wappalyzer "github.com/projectdiscovery/wappalyzergo"
 	"strings"
 	"time"
 
@@ -143,16 +144,18 @@ type Options struct {
 	FilterRegex []*regexp.Regexp
 	// MatchRegex is the slice regex to match url
 	MatchRegex []*regexp.Regexp
-	//DisableUpdateCheck disables automatic update check
+	// DisableUpdateCheck disables automatic update check
 	DisableUpdateCheck bool
-	//IgnoreQueryParams ignore crawling same path with different query-param values
+	// IgnoreQueryParams ignore crawling same path with different query-param values
 	IgnoreQueryParams bool
 	// Debug
 	Debug bool
 	// TlsImpersonate enables experimental tls ClientHello randomization for standard crawler
 	TlsImpersonate bool
-	//DisableRedirects disables the following of redirects
+	// DisableRedirects disables the following of redirects
 	DisableRedirects bool
+
+	Wappalyzer *wappalyzer.Wappalyze
 }
 
 func (options *Options) ParseCustomHeaders() map[string]string {
